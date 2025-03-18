@@ -10,7 +10,7 @@ dependencies = [
     "langchain-ollama>=0.2.3",
     "fire>=0.7.0",
     "langchain>=0.3.19",
-    "langchain-community>=0.3.18",
+    "langchain-community>=0.3.19",
     "langchain-openai>=0.3.7",
     "python-dotenv>=1.0.1",
     "pydantic>=2.10.6",
@@ -19,6 +19,9 @@ dependencies = [
     "google-search-results>=2.4.2",
     "langchainhub>=0.1.21",
     "mem0ai>=0.1.66",
+    "langchain-experimental>=0.3.4",
+    "langgraph>=0.3.8",
+    "sympy>=1.13.3",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"

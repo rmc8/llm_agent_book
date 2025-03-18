@@ -15,7 +15,6 @@ aiofiles==23.2.1
 aiohappyeyeballs==2.4.6
     # via aiohttp
 aiohttp==3.11.13
-    # via langchain
     # via langchain-community
 aiosignal==1.3.2
     # via aiohttp
@@ -121,6 +120,7 @@ httpx==0.28.1
     # via chromadb
     # via gradio
     # via gradio-client
+    # via langgraph-sdk
     # via langsmith
     # via ollama
     # via openai
@@ -155,20 +155,27 @@ jsonpointer==3.0.0
     # via jsonpatch
 kubernetes==32.0.1
     # via chromadb
-langchain==0.3.19
+langchain==0.3.20
     # via langchain-community
     # via llm-agent-book
 langchain-chroma==0.2.2
     # via llm-agent-book
-langchain-community==0.3.18
+langchain-community==0.3.19
+    # via langchain-experimental
     # via llm-agent-book
-langchain-core==0.3.39
+langchain-core==0.3.44
     # via langchain
     # via langchain-chroma
     # via langchain-community
+    # via langchain-experimental
     # via langchain-ollama
     # via langchain-openai
     # via langchain-text-splitters
+    # via langgraph
+    # via langgraph-checkpoint
+    # via langgraph-prebuilt
+langchain-experimental==0.3.4
+    # via llm-agent-book
 langchain-ollama==0.2.3
     # via llm-agent-book
 langchain-openai==0.3.7
@@ -177,6 +184,15 @@ langchain-text-splitters==0.3.6
     # via langchain
 langchainhub==0.1.21
     # via llm-agent-book
+langgraph==0.3.8
+    # via llm-agent-book
+langgraph-checkpoint==2.0.19
+    # via langgraph
+    # via langgraph-prebuilt
+langgraph-prebuilt==0.1.2
+    # via langgraph
+langgraph-sdk==0.1.56
+    # via langgraph
 langsmith==0.3.10
     # via langchain
     # via langchain-community
@@ -198,6 +214,8 @@ monotonic==1.6
     # via posthog
 mpmath==1.3.0
     # via sympy
+msgpack==1.1.0
+    # via langgraph-checkpoint
 multidict==6.1.0
     # via aiohttp
     # via yarl
@@ -207,7 +225,6 @@ numpy==1.26.4
     # via chroma-hnswlib
     # via chromadb
     # via gradio
-    # via langchain
     # via langchain-chroma
     # via langchain-community
     # via onnxruntime
@@ -259,6 +276,7 @@ opentelemetry-util-http==0.51b0
 orjson==3.10.15
     # via chromadb
     # via gradio
+    # via langgraph-sdk
     # via langsmith
 overrides==7.7.0
     # via chromadb
@@ -400,10 +418,10 @@ starlette==0.45.3
     # via fastapi
     # via gradio
 sympy==1.13.3
+    # via llm-agent-book
     # via onnxruntime
 tenacity==9.0.0
     # via chromadb
-    # via langchain
     # via langchain-community
     # via langchain-core
 termcolor==2.5.0
